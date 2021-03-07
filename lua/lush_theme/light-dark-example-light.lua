@@ -28,6 +28,9 @@ local theme = lush.extends(base).with(function()
 
     Normal { bg = colors.gray_300, fg = colors.gray_800 },
     -- but we will override some of Comment
+    -- note, you can pass in any required lush spec group here, it does not
+    -- have to be something you passed into extends()
+    -- extends just merges any old rules into the new spec
     Comment { base.Comment, bg = colors.gray_300 }
   }
 end)
